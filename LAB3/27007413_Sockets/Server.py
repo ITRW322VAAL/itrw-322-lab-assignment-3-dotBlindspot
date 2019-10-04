@@ -1,4 +1,4 @@
-import socket 
+import socket #27007413 JM Erasmus
 
 HOST = '127.0.0.1'   #Standard loopback interface address (localhost)
 PORT = 9999          #Port to listen on
@@ -13,4 +13,4 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 			data = conn.recv(2048) # default byte stream size
 			if not data:
 				break
-			conn.sendall(data)
+			conn.sendall(data) 
